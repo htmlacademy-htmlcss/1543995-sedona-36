@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <!--<link rel="stylesheet" href="/css/style.css"> -->
+</head>
+<body>
+<div class="body__container">
+  <header class="header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="logo" href="https://echo.htmlacademy.ru/">
+            <img src="/img/logo.svg" alt="логотип"></a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">О седоне</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <img src="/img/search-icon.svg" width="44 px" height="64 px" alt="лупа">
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <img src="/img/favorites-icon.svg" width="44 px" height="64 px" alt="Избранное">
+          </a>
+          <a class="search__button" href="#">хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="pluses">
+      <h1>Гостиницы Седоны</h1>
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a href="#">Гостиницы</a></li>
+      </ul>
+      <div class="form">
+        <form action="#" class="pluses__form">
+          <h3 class="form__title">Инфраструктура</h3>
+          <label class="remember">
+            <input class="custom__checkbox" type="checkbox" checked>Бассейн
+            <input class="custom__checkbox" type="checkbox" checked>Парковка
+            <input class="custom__checkbox" type="checkbox">Wi-Fi
+          </label>
+          <h3 class="form__title">Тип жилья:</h3>
+          <label>
+            <input type="radio" name="question__one" value="p" checked>Гостиница
+            <input type="radio" name="question__one" value="b">Мотель
+            <input type="radio" name="question__one" value="b">Апартаменты
+          </label>
+        </form>
+        <div class="price">
+          <h3 class="form__title">Стоимость, ₽:</h3>
+          <label for="price">
+            <input type="number" min="1" max="0" placeholder="от"/>
+            <input type="number" min="1" max="999999" placeholder="до"/></label>
+        </div>
+        <input type="range" id="price" min="0" max="9000" step="1" name="price"/>
+        <button class="form__button form__button-active">Применить</button>
+        <button class="form__button">Сбросить</button>
+      </div>
+      <div class="wrapper">
+        <form class="dropdown">
+          <h2 class="dropdown__title">Найдено гостиниц: 38</h2>
+          <button class="dropdown__button">
+            <span class="dropdown__subtitle">Сначала дешевые</span>
+            <span class="dropdown__span"></span>
+          </button>
+          <div class="wrap">
+            <button class="wrap__button">
+              <span class="wrap__button"></span>
+            </button>
+            <button class="wrap__button">
+              <span class="wrap__button"></span>
+            </button>
+            <button class="wrap__button">
+              <span class="wrap__button"></span>
+            </button>
+          </div>
+        </form>
+        <div class="content">
+          <div class="content__preview">
+            <a href="#" class="img__content"><img src="#" alt="вид из тунеля" class="img__preview"></a>
+            <h3 class="preview__title">Amara Resort & Spa</h3>
+            <div class="preview__grid">
+              <p class="preview__subtitle">Гостиница</p>
+              <p class="preview__subtitle">От 4000 ₽</p>
+              <button class="preview__button">Подробнее</button>
+              <button class="preview__button preview__button-blue">в избранное</button>
+              <span class="preview__star">****</span>
+              <button class="preview__button preview__button-white">Рейтинг: 8,5</button>
+            </div>
+          </div>
+          <div class="content__preview">
+            <a href="#" class="img__content"><img src="#" alt="горы на закате" class="img__preview"></a>
+            <h3 class="preview__title">Villas at Poco Diablo</h3>
+            <div class="preview__grid">
+              <p class="preview__subtitle">Гостиница</p>
+              <p class="preview__subtitle">От 5000 ₽</p>
+              <button class="preview__button">Подробнее</button>
+              <button class="preview__button preview__button-blue">в избранное</button>
+              <span class="preview__star">****</span>
+              <button class="preview__button preview__button-white">Рейтинг: 9,2</button>
+            </div>
+          </div>
+          <div class="content__preview">
+            <a href="#" class="img__content"><img src="#" alt="горы на рассвете" class="img__preview"></a>
+            <h3 class="preview__title">Desert Quail Inn</h3>
+            <div class="preview__grid">
+              <p class="preview__subtitle">Гостиница</p>
+              <p class="preview__subtitle">От 2500 ₽</p>
+              <button class="preview__button">Подробнее</button>
+              <button class="preview__button preview__button-blue">в избранное</button>
+              <span class="preview__star">****</span>
+              <button class="preview__button preview__button-white">Рейтинг: 6,9</button>
+            </div>
+          </div>
+          <div class="content__preview">
+            <a href="#" class="img__content"><img src="#" alt="горы в полночь" class="img__preview"></a>
+            <h3 class="preview__title">GreenTree Inn</h3>
+            <div class="preview__grid">
+              <p class="preview__subtitle">Гостиница</p>
+              <p class="preview__subtitle">От 1500 ₽</p>
+              <button class="preview__button">Подробнее</button>
+              <button class="preview__button preview__button-blue">в избранное</button>
+              <span class="preview__star">****</span>
+              <button class="preview__button preview__button-white">Рейтинг: 5,0</button>
+            </div>
+          </div>
+        </div>
+        <div class="paginator">
+          <a href="/" class="paginator-item">1</a>
+          <a href="/" class="paginator-item">2</a>
+          <a href="/" class="paginator-item">3</a>
+          <a href="/" class="paginator-item">4</a>
+          <a href="/" class="paginator-item">5</a>
+          <a href="/" class="paginator-item">6</a>
+          <a href="/" class="paginator-item">7</a>
+          <a href="/" class="paginator-item">8</a>
+          <a href="/" class="paginator-item">9</a>
+          <a href="/" class="paginator-item">10</a>
+          </div>
+      </div>
+      <div class="contact__card">
+        <h2 class="title">Подпищитесь на рассылку</h2>
+        <p class="subtitle__image">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+        <form class="pluses__form">
+          <input type="text" placeholder="Ваш e-mail" name="e-mail" id="login-field">
+          <input type="submit" value="Подписаться">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="navigation navigation__footer">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <img class="social__icon" src="/img/social-vk.svg" alt="Вконтакте">
+          </a>
+        <li class="social__item">
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <img class="social__icon" src="/img/social-telegram.svg" alt="Вконтакте">
+          </a>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="social__icon" src="/img/social-youtube.svg" alt="Вконтакте">
+          </a>
+        </li>
+      </ul>
+      <a class="contacts__phone" href="tel:+7(495) 666-02-66">+7(495) 666-02-66</a>
+      <a class="site__html-academy" href="https://htmlacademy.ru/">
+        <img src="/img/Logo-html-academy.svg" alt="html-академия">
+      </a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
+
+
+
