@@ -15,7 +15,7 @@
             <img src="/img/logo.svg" alt="логотип"></a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Главная</a>
+          <a class="navigation__link" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">О седоне</a>
@@ -153,11 +153,13 @@
           </div>
       </div>
       <div class="contact__card">
-        <h2 class="title">Подпищитесь на рассылку</h2>
+        <h2 class="title__image">Подпищитесь на рассылку</h2>
         <p class="subtitle__image">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="pluses__form">
-          <input type="text" placeholder="Ваш e-mail" name="e-mail" id="login-field">
-          <input type="submit" value="Подписаться">
+          <label for="login-field" class="form__login">
+            <input type="text" placeholder="Ваш e-mail" name="e-mail" id="login-field">
+            <input type="submit" value="Подписаться">
+          </label>
         </form>
       </div>
     </section>
