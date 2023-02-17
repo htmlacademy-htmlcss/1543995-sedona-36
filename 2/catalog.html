@@ -41,8 +41,8 @@
     </nav>
   </header>
   <main class="main__inner">
+    <h1 class="main__title">Гостиницы Седоны</h1>
     <section class="pluses">
-      <h1>Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumb__item">
           <a class="main__icon" href="index.html">
@@ -67,30 +67,28 @@
           <div class="form__container">
             <h3 class="form__title">Тип жилья:</h3>
             <label for="radio__one" class="remember">
-              <input class="radio__hostel" type="radio" name="radio__hostel" id="radio__one" value="p" checked>Гостиница
+              <input class="radio__hostel" type="radio" name="question__one" id="radio__one" value="hostels" checked>Гостиница
             </label>
             <label for="radio__two" class="remember">
-              <input class="radio__hotel" type="radio" name="radio__hotel" id="radio__two" value="b">Мотель
+              <input class="radio__hotel" type="radio" name="question__one" id="radio__two" value="hotel">Мотель
             </label>
             <label for="radio__three" class="remember">
-              <input class="radio__apartment" type="radio" name="radio__apartment" id="radio__three" value="b">Апартаменты
+              <input class="radio__apartment" type="radio" name="question__one" id="radio__three" value="apartment">Апартаменты
             </label>
           </div>
           <div class="form__container">
             <h3 class="form__title">Стоимость, ₽:</h3>
             <label class="price" for="price__from">
-              <input class="price__from" type="number" min="1" id="price__from" name="price__from" placeholder="от">
+              <input class="price__from" type="number" min="1" id="price__from" name="price__from">От
             </label>
             <label class="price" for="price__before">
-              <input class="price__before" type="number" max="999999" id="price__before" name="price__before"
-                     placeholder="до">
+              <input class="price__before" type="number" max="999999" id="price__before" name="price__before">До
             </label>
-            <label class="price" for="price__range"></label>
+            <label class="price" for="price__range">Прайс</label>
             <input class="price__range" type="range" id="price__range" min="0" max="9000" step="1"  name="price">
           </div>
-          <label class="form__apply" for="button__form"></label>
-          <input class="form__apply form__apply-active" id="button__form" value="Применить">
-          <input class="form__throw" type="reset" value="Сбросить">
+          <button class="form__apply form__apply-active" type="button">Применить</button>
+          <button class="form__throw" type="reset">Сбросить</button>
         </form>
       </div>
       <div class="wrapper">
@@ -118,7 +116,7 @@
             <div class="preview__grid">
               <p class="preview__subtitle">Гостиница</p>
               <p class="preview__subtitle">От 4000 ₽</p>
-              <a class="preview__button">Подробнее</a>
+              <a class="preview__button" href="#">Подробнее</a>
               <button class="preview__button preview__button-blue" type="button">в избранное</button>
               <span class="preview__star">4 звезды</span>
               <p class="preview__button preview__button-white">Рейтинг: 8,5</p>
@@ -132,7 +130,7 @@
             <div class="preview__grid">
               <p class="preview__subtitle">Гостиница</p>
               <p class="preview__subtitle">От 5000 ₽</p>
-              <a class="preview__button">Подробнее</a>
+              <a class="preview__button" href="#">Подробнее</a>
               <button class="preview__button preview__button-blue" type="button">в избранное</button>
               <span class="preview__star">4 звезды</span>
               <p class="preview__button preview__button-white">Рейтинг: 9,2</p>
@@ -146,7 +144,7 @@
             <div class="preview__grid">
               <p class="preview__subtitle">Гостиница</p>
               <p class="preview__subtitle">От 2500 ₽</p>
-              <a class="preview__button">Подробнее</a>
+              <a class="preview__button" href="#">Подробнее</a>
               <button class="preview__button preview__button-blue" type="button">в избранное</button>
               <span class="preview__star">3 звезды</span>
               <p class="preview__button preview__button-white">Рейтинг: 6,9</p>
@@ -160,7 +158,7 @@
             <div class="preview__grid">
               <p class="preview__subtitle">Гостиница</p>
               <p class="preview__subtitle">От 1500 ₽</p>
-              <a class="preview__button">Подробнее</a>
+              <a class="preview__button" href="#">Подробнее</a>
               <button class="preview__button preview__button-blue" type="button">в избранное</button>
               <span class="preview__star">2 звезды</span>
               <p class="preview__button preview__button-white">Рейтинг: 5,0</p>
@@ -172,7 +170,7 @@
           <a href="/" class="paginator-item">2</a>
           <a href="/" class="paginator-item">3</a>
           <a href="/" class="paginator-item">4</a>
-          <span class="paginator__ellipsis">троеточие</span>
+          <span class="paginator__ellipsis">...</span>
           <a href="/" class="paginator-item">10</a>
         </div>
       </div>
@@ -204,7 +202,7 @@
           </a>
         </li>
       </ul>
-      <a class="contacts__phone" href="tel:+7(495) 666-02-66">+7(495) 666-02-66</a>
+      <a class="contacts__phone" href="tel:+74956660266">+7(495) 666-02-66</a>
       <a class="site__html-academy" href="https://htmlacademy.ru/">
         <img src="/img/logo-html-academy.svg" alt="html-академия">
       </a>
