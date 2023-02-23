@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-htmlcss.github.io/1543995-sedona-36/3/">
+</head>
+<body>
+<div class="body__container">
+  <header class="header">
+    <nav class="navigation">
+      <div class="navigation__container">
+        <a class="logo" href="https://echo.htmlacademy.ru/">
+          <img src="/images/sedona-logo.png" width="140" height="70" alt=""></a>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">О седоне</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="visually__hidden">Лупа</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            <span class="visually__hidden">Избранное</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="search__button" href="#">Хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Седона</h1>
+    <section class="pluses">
+      <div class="pluses__img"></div>
+      <div class="pluses__container">
+        <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+      <div class="pluses__row">
+        <div class="pluses__item pluses__item-blue">
+          <h2 class="pluses__title">Настоящий городок</h2>
+          <p class="pluses__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="pluses__image" src="/images/home.jpg" width="800" height="384" alt="">
+      </div>
+      <div class="pluses__grids">
+        <div class="pluses__item">
+          <h2 class="pluses__title">Небольшая площадь</h2>
+          <p class="pluses__text">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="pluses__item pluses__item-gray">
+          <h2 class="pluses__title">Красивая дорога</h2>
+          <p class="pluses__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="pluses__item">
+          <h2 class="pluses__title">Мало туристов</h2>
+          <p class="pluses__text">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </div>
+      <div class="pluses__row">
+        <img class="pluses__image" src="/images/mountains.jpg" width="800" height="385" alt="">
+        <div class="pluses__item pluses__item-blue">
+          <h2 class="pluses__title">Там есть мост дьявола</h2>
+          <p class="pluses__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
+      </div>
+      <div class="pluses__title">
+        <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+        <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
+      </div>
+      <div class="pluses__flex">
+        <div class="pluses__item  pluses__item-gray">
+          <h2 class="pluses__title">Жилье</h2>
+          <p class="pluses__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+        <div class="pluses__item">
+          <h2 class="pluses__title">Еда</h2>
+          <p class="pluses__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="pluses__item  pluses__item-gray">
+          <h2 class="pluses__title">Сувениры</h2>
+          <p class="pluses__text">Не только китайского, но и настоящего местного производства!</p>
+        </div>
+      </div>
+      <div class="pluses__title">
+        <h2 class="title">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="search__button" href="catalog.html">Поиск гостиницы в седоне</a>
+      </div>
+      <div class="contact__card contact__cart-white">
+          <h2 class="title__image">Подпишитесь на рассылку</h2>
+          <p class="subtitle__image">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+          <form class="pluses__form" action="https://echo.htmlacademy.ru" method="post">
+            <label for="login-field" class="form__login">Подписка</label>
+            <input type="email" placeholder="Ваш e-mail" name="e-mail" id="login-field">
+            <input class="button__field" type="submit" value="Подписаться">
+          </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+      <nav class="navigation navigation__footer">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="vk__icon" href="https://vk.com/htmlacademy">
+                <span class="visually__hidden">Вконтакте</span>
+            </a></li>
+          <li class="social__item">
+            <a class="telegram__icon" href="https://t.me/htmlacademy">
+              <span class="visually__hidden">Телеграм.</span>
+            </a></li>
+          <li class="social__item">
+            <a class="youtube__icon" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually__hidden">youtube</span>
+            </a></li>
+        </ul>
+        <a class="contacts__phone" href="tel:+74956660266">+7(495) 666-02-66</a>
+        <a class="site__html-academy" href="https://htmlacademy.ru/">
+          <img class="html__logo" src="/images/html-academy.svg" width="115" height="34" alt="html-академия">
+        </a>
+      </nav>
+  </footer>
+</div>
+</body>
+</html>
