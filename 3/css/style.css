@@ -118,6 +118,7 @@ h1 {
   color: var(--black-light);
 }
 
-.pluses__img {
+.img__container {
   background-image: url("../images/background-index.png");
+  z-index: 9999;
 }
