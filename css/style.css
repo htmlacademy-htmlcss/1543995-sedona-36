@@ -1,51 +1,124 @@
-.search-button {
-  display: inline-block; /* Строчно-блочный элемент */
-  background: #756157; /* коричневый цвет фона */
-  color: #fff; /* Белый цвет текста */
-  padding: 1rem 1.5rem; /* Поля вокруг текста */
-  text-decoration: none; /* Убираем подчёркивание */
-  border-radius: 3px; /* Скругляем уголки */
- }
+/*.search-button {
+/*display: inline-block; /* Строчно-блочный элемент */
+/*background: #756157; /* коричневый цвет фона */
+/*color: #fff; /* Белый цвет текста */
+/*padding: 1rem 1.5rem; /* Поля вокруг текста */
+/*text-decoration: none; /* Убираем подчёркивание */
+/*border-radius: 3px; /* Скругляем уголки */
+
+
 li {
   list-style-type: none;
 }
- /*/
- .image {
-	position	: relative;
-	width		: 100%; /* for IE 6 */
- /*/
- .in-image {
-	position	: absolute;
-  text-align: center;
-  font: bold 24px/34px Helvetica, Sans-Serif;
-	top		: 200px;
-	left		: 0;
-	width		: 100%;
+
+html {
+  box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --white: #ffffff;
+  --white-opacity: 255, 255, 255;
+  --white-dark: #fbfafb;
+  --white-dark-opacity: 251, 250, 251;
+  --black: #000000;
+  --black-opacity: 0, 0, 0;
+  --black-1: #111018;
+  --black-light: #2A2F2F;
+  --dark: #0A0A0A;
+  --red: #CC2525;
+  --red-light: #E31E24;
+  --blue: #00457E;
+  --blue-1: #2E3595;
+  --blue-dark: #02315D;
+  --blue-light: #034780;
+  --blue-light-opacity: 3, 71, 128;
+}
+/* применение var(--white); */
 
-{
-
+.visually-hidden:not(:focus):not(active) {
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-  top: 50%;
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--black-light);
+}
 
-  left: 65px;
+button {
+  border: none;
+  outline: none;
+  background-color: initial;
+  cursor: pointer;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+}
 
-  text-transform: uppercase;
+input {
+  outline: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black-light);
+  border: none;
+}
 
-  color: white;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-  width: 350px;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  background: #00000094;
+h1 {
+  margin: 0;
+}
 
-  padding: 10px;
+.body__container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1920px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black-light);
+}
 
-  text-align: center;
-
-  font: bold 24px/34px Helvetica, Sans-Serif;
-
-  }
-/*/
+.img__container {
+  background-image: url("../images/background-index.png");
+  z-index: 9999;
+}
