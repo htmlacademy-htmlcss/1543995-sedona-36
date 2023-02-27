@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -34,14 +34,14 @@
           <a class="navigation__link" href="#">
             <span class="visually__hidden">Избранное</span>
           </a>
-          <a class="search__button" href="#">Хочу сюда</a>
+          <a class="search__link" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main__inner">
-    <h1 class="main__title">Гостиницы Седоны</h1>
-    <section class="pluses">
+    <section class="pluses pluses--catalog">
+      <h1 class="main__title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumb__item">
           <a class="main__icon" href="index.html">
@@ -90,6 +90,8 @@
           <button class="form__throw" type="reset">Сбросить</button>
         </form>
       </div>
+    </section>
+    <section>
       <div class="wrapper">
         <h2 class="dropdown__title">Найдено гостиниц: 38</h2>
         <select class="select__control" aria-label="Сортировка">
@@ -98,13 +100,13 @@
           <option value="expensive">Сначала популярные</option>
         </select>
         <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
+          <span class="visually__hidden">Показать карточки</span>
         </a>
         <a class="button" href="#">
-          <span class="visually-hidden">Показать в виде бургер</span>
+          <span class="visually__hidden">Показать в виде бургер</span>
         </a>
         <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
+          <span class="visually__hidden">Показать список</span>
         </a>
         <div class="content">
           <div class="content__preview">
@@ -189,15 +191,15 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="vk__icon" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually__hidden">Вконтакте</span>
           </a>
         <li class="social__item">
           <a class="telegram__icon" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм.</span>
+            <span class="visually__hidden">Телеграм.</span>
           </a>
         <li class="social__item">
           <a class="youtube__icon" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">youtube</span>
+            <span class="visually__hidden">youtube</span>
           </a>
         </li>
       </ul>
