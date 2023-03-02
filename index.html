@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet"  href="css/style.css">
+  <link rel="stylesheet"  href="styles/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <a class="logo" href="https://echo.htmlacademy.ru/">
           <img src="/images/sedona-logo.svg" width="140" height="70" alt=""></a>
         <ul class="navigation__list">
-          <li class="navigation__item navigation__link--active">
+          <li class="navigation__item navigation__item--active">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
           <li class="navigation__item">
@@ -44,7 +44,7 @@
   <main class="main">
     <section class="pluses">
       <h1 class="visually__hidden">Седона</h1>
-      <div class="pluses__container">
+      <div class="pluses__img">
       <img class="pluses__img" src="/images/vector-welcome.svg" width="457" height="352" alt="welcome">
       </div>
       <div class="pluses__content">
@@ -88,20 +88,23 @@
         <h2 class="title title--little">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="subtitle">Опытный персонал и качественное обслуживание!</p>
       </div>
-      <div class="pluses__flex">
-        <div class="pluses__item  pluses__item-gray">
+      <ul class="pluses__flex">
+        <li class="pluses__item  pluses__item-gray">
+          <img class="pluses__images" src="/images/icons/icon-home.svg" width="76" height="72" alt="">
           <h2 class="pluses__title">Жилье</h2>
           <p class="pluses__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </div>
-        <div class="pluses__item">
+        </li>
+        <li class="pluses__item">
+          <img class="pluses__images" src="/images/icons/icon-food.svg" width="76" height="72" alt="">
           <h2 class="pluses__title">Еда</h2>
           <p class="pluses__text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-        </div>
-        <div class="pluses__item  pluses__item-gray">
+        </li>
+        <li class="pluses__item  pluses__item-gray">
+          <img class="pluses__images" src="/images/icons/icon-present.svg" width="76" height="72" alt="">
           <h2 class="pluses__title">Сувениры</h2>
           <p class="pluses__text">Не только китайского, но и настоящего местного производства!</p>
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="pluses__content pluses__content--little">
         <h2 class="title">Заинтересовались?</h2>
         <p class="subtitle">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>

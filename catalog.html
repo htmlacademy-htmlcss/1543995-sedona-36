@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <nav class="navigation">
       <div class="navigation__container">
         <a class="logo" href="https://echo.htmlacademy.ru/">
-          <img src="/images/sedona-logo.svg" width="140" height="70" alt="логотип"></a>
+          <img src="/images/sedona-logo.svg" width="140" height="70" alt=""></a>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -19,77 +19,91 @@
           <li class="navigation__item">
             <a class="navigation__link" href="#">О седоне</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Гостиницы</a>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </div>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="visually__hidden">Лупа</span>
+            <img class="search" src="/images/vectors/vector-search.svg" width="19" height="19" alt="лупа">
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="visually__hidden">Избранное</span>
+            <img class="favorites" src="/images/vectors/vector-health.svg" width="18" height="18" alt="Избранное">
           </a>
-          <a class="search__link" href="#">Хочу сюда</a>
+        </li>
+        <li class="navigation__item">
+          <a class="button button--little" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main__inner">
     <section class="pluses pluses--catalog">
-      <h1 class="main__title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumb__item">
-          <a class="main__icon" href="index.html">
-            <span class="visually__hidden">Главная</span>
-          </a></li>
-        <li class="breadcrumb__item"><a href=" ">Гостиницы</a></li>
-      </ul>
-      <div class="pluses__form">
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__container">
-            <h3 class="form__title">Инфраструктура</h3>
-            <label for="checked__pool" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__pool" name="pool" checked>Бассейн
-            </label>
-            <label for="checked__parking" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__parking" name="parking" checked>Парковка
-            </label>
-            <label for="checked__wifi" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__wifi" name="wi-fi">Wi-Fi
-            </label>
-          </div>
-          <div class="form__container">
-            <h3 class="form__title">Тип жилья:</h3>
-            <label for="radio__one" class="remember">
-              <input class="radio__hostel" type="radio" name="question__one" id="radio__one" value="hostels" checked>Гостиница
-            </label>
-            <label for="radio__two" class="remember">
-              <input class="radio__hotel" type="radio" name="question__one" id="radio__two" value="hotel">Мотель
-            </label>
-            <label for="radio__three" class="remember">
-              <input class="radio__apartment" type="radio" name="question__one" id="radio__three" value="apartment">Апартаменты
-            </label>
-          </div>
-          <div class="form__container">
-            <h3 class="form__title">Стоимость, ₽:</h3>
-            <label class="price" for="price__from">
-              <input class="price__from" type="number" min="1" id="price__from" name="price__from">От
-            </label>
-            <label class="price" for="price__before">
-              <input class="price__before" type="number" max="999999" id="price__before" name="price__before">До
-            </label>
-            <label class="price" for="price__range">Прайс</label>
-            <input class="price__range" type="range" id="price__range" min="0" max="9000" step="1"  name="price">
-          </div>
-          <button class="form__apply form__apply-active" type="submit">Применить</button>
-          <button class="form__throw" type="reset">Сбросить</button>
-        </form>
+      <div class="pluses__container">
+        <h1 class="main__title">Гостиницы Седоны</h1>
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__link" href="index.html">
+              <img class="pluses__icon" src="/images/vectors/vector-home.svg" width="13" height="13" alt="Домик">
+            </a>
+          <img class="pluses__icon" src="/images/vectors/vector-go.svg" alt=">">
+            <a class="breadcrumbs__link" href="#">Гостиницы</a>
+        </div>
       </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="pluses__forms">
+            <div class="form__container">
+              <h3 class="form__title">Инфраструктура</h3>
+              <div class="form__wrap">
+                <label for="checked__pool" class="remember">
+                  <input class="check" type="checkbox" id="checked__pool" name="pool" checked>Бассейн
+                </label>
+                <label for="checked__parking" class="remember">
+                  <input class="check" type="checkbox" id="checked__parking" name="parking" checked>Парковка
+                </label>
+                <label for="checked__wifi" class="remember">
+                  <input class="check" type="checkbox" id="checked__wifi" name="wi-fi">Wi-Fi
+                </label>
+              </div>
+            </div>
+            <div class="form__container">
+              <h3 class="form__title">Тип жилья:</h3>
+              <div class="form__wrap">
+                <label for="radio__one" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__one" value="hostels" checked>Гостиница
+                </label>
+                <label for="radio__two" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__two" value="hotel">Мотель
+                </label>
+                <label for="radio__three" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__three" value="apartment">Апартаменты
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="pluses__forms">
+            <div class="form__container">
+              <h3 class="form__title">Стоимость, ₽:</h3>
+              <div class="form__price">
+              <label class="price" for="price__from">
+                <input class="price__before" type="number" min="1" id="price__from" name="price__from">
+                <p class="form__text">От</p>
+              </label>
+              <label class="price" for="price__before">
+                <input class="price__before" type="text" max="999999" id="price__before" name="price__before">
+                <p class="form__text">До</p>
+              </label>
+              </div>
+              <label class="pric" for="price__range">Прайс</label>
+              <input class="pric__range" type="range" id="price__range" min="0" max="9000" step="1" name="price">
+            </div>
+            <button class="button button--field" type="submit">Применить</button>
+            <button class="button button--glassy" type="reset">Сбросить</button>
+          </div>
+        </form>
     </section>
     <section>
       <div class="wrapper">
@@ -125,7 +139,8 @@
           </div>
           <div class="content__preview">
             <a href="#" class="img__content">
-              <img class="img__preview" src="/images/hotel-villas.jpg" width="300" height="212" alt="вид горы на рассвете">
+              <img class="img__preview" src="/images/hotel-villas.jpg" width="300" height="212"
+                   alt="вид горы на рассвете">
               <h3 class="preview__title">Villas at Poco Diablo</h3>
             </a>
             <div class="preview__grid">
@@ -139,7 +154,8 @@
           </div>
           <div class="content__preview">
             <a href="#" class="img__content">
-              <img class="img__preview" src="/images/hotel-desrt-quail.jpg" width="300" height="212" alt="вид горы днем">
+              <img class="img__preview" src="/images/hotel-desrt-quail.jpg" width="300" height="212"
+                   alt="вид горы днем">
               <h3 class="preview__title">Desert Quail Inn</h3>
             </a>
             <div class="preview__grid">
@@ -153,7 +169,8 @@
           </div>
           <div class="content__preview">
             <a href="#" class="img__content">
-              <img class="img__preview" src="/images/hotel-green-tree.jpg" width="300" height="212" alt="вид на горы ночью">
+              <img class="img__preview" src="/images/hotel-green-tree.jpg" width="300" height="212"
+                   alt="вид на горы ночью">
               <h3 class="preview__title">GreenTree Inn</h3>
             </a>
             <div class="preview__grid">
@@ -191,21 +208,23 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="vk__icon" href="https://vk.com/htmlacademy">
-            <span class="visually__hidden">Вконтакте</span>
+            <img class="social__icon" src="/images/vectors/vector-vk.svg" alt="Vk">
           </a>
+        </li>
         <li class="social__item">
           <a class="telegram__icon" href="https://t.me/htmlacademy">
-            <span class="visually__hidden">Телеграм.</span>
+            <img class="social__icon" src="/images/vectors/vector-telegram.svg" alt="Telegram">
           </a>
+        </li>
         <li class="social__item">
           <a class="youtube__icon" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually__hidden">youtube</span>
+            <img class="social__icon" src="/images/vectors/vector-youtube.svg" alt="You-Tube">
           </a>
         </li>
       </ul>
       <a class="contacts__phone" href="tel:+74956660266">+7(495) 666-02-66</a>
       <a class="site__html-academy" href="https://htmlacademy.ru/">
-        <img src="/images/html-academy.svg" width="115" height="34" alt="html-академия">
+        <img class="html__logo" src="/images/html-academy.svg" width="115" height="34" alt="html-академия">
       </a>
     </nav>
   </footer>
