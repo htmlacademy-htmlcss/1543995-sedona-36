@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
     <nav class="navigation">
       <div class="navigation__container">
         <a class="logo" href="https://echo.htmlacademy.ru/">
-          <img src="/images/sedona-logo.svg" width="140" height="70" alt="логотип"></a>
+          <img class="header_img" src="/images/sedona-logo.svg" width="140" height="70" alt=""></a>
         <ul class="navigation__list">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">Главная</a>
@@ -19,167 +19,242 @@
           <li class="navigation__item">
             <a class="navigation__link" href="#">О седоне</a>
           </li>
-          <li class="navigation__item">
-            <a class="navigation__link navigation__link--active" href="#">Гостиницы</a>
+          <li class="navigation__item navigation__item--active">
+            <a class="navigation__link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </div>
       <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            <span class="visually__hidden">Лупа</span>
+        <li class="navigation__icon">
+          <a class="icon__link" href="#">
+            <img class="search" src="/images/vectors/vector-search.svg" width="20" height="20" alt="лупа">
+          </a>
+          <a class="icon__link" href="#">
+            <img class="favorites" src="/images/vectors/vector-heart.svg" width="20" height="20" alt="Избранное">
           </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            <span class="visually__hidden">Избранное</span>
-          </a>
-          <a class="search__button" href="#">Хочу сюда</a>
+        <li class="navigation__button">
+          <a class="button button--little" href="#">Хочу сюда</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main__inner">
-    <h1 class="main__title">Гостиницы Седоны</h1>
-    <section class="pluses">
-      <ul class="breadcrumbs">
-        <li class="breadcrumb__item">
-          <a class="main__icon" href="index.html">
-            <span class="visually__hidden">Главная</span>
-          </a></li>
-        <li class="breadcrumb__item"><a href=" ">Гостиницы</a></li>
-      </ul>
-      <div class="pluses__form">
+    <section class="pluses pluses--catalog">
+      <div class="pluses__container">
+        <h1 class="main__title">Гостиницы Седоны</h1>
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__link" href="index.html">
+              <img class="pluses__icon" src="/images/vectors/vector-home.svg" width="13" height="13" alt="Домик">
+            </a>
+          <img class="pluses__icon" src="/images/vectors/vector-go.svg" alt=">">
+            <a class="breadcrumbs__link" href="#">Гостиницы</a>
+        </div>
+      </div>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__container">
-            <h3 class="form__title">Инфраструктура</h3>
-            <label for="checked__pool" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__pool" name="pool" checked>Бассейн
-            </label>
-            <label for="checked__parking" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__parking" name="parking" checked>Парковка
-            </label>
-            <label for="checked__wifi" class="remember">
-              <input class="custom__checkbox" type="checkbox" id="checked__wifi" name="wi-fi">Wi-Fi
-            </label>
+          <div class="pluses__forms">
+            <div class="form__container">
+              <h3 class="form__title">Инфраструктура</h3>
+              <div class="form__wrap">
+                <label for="checked__pool" class="remember">
+                  <input class="check" type="checkbox" id="checked__pool" name="pool" checked>Бассейн
+                </label>
+                <label for="checked__parking" class="remember">
+                  <input class="check" type="checkbox" id="checked__parking" name="parking" checked>Парковка
+                </label>
+                <label for="checked__wifi" class="remember">
+                  <input class="check" type="checkbox" id="checked__wifi" name="wi-fi">Wi-Fi
+                </label>
+              </div>
+            </div>
+            <div class="form__container">
+              <h3 class="form__title">Тип жилья:</h3>
+              <div class="form__wrap">
+                <label for="radio__one" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__one" value="hostels" checked>Гостиница
+                </label>
+                <label for="radio__two" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__two" value="hotel">Мотель
+                </label>
+                <label for="radio__three" class="remember">
+                  <input class="check" type="radio" name="question__one" id="radio__three" value="apartment">Апартаменты
+                </label>
+              </div>
+            </div>
           </div>
-          <div class="form__container">
-            <h3 class="form__title">Тип жилья:</h3>
-            <label for="radio__one" class="remember">
-              <input class="radio__hostel" type="radio" name="question__one" id="radio__one" value="hostels" checked>Гостиница
-            </label>
-            <label for="radio__two" class="remember">
-              <input class="radio__hotel" type="radio" name="question__one" id="radio__two" value="hotel">Мотель
-            </label>
-            <label for="radio__three" class="remember">
-              <input class="radio__apartment" type="radio" name="question__one" id="radio__three" value="apartment">Апартаменты
-            </label>
+          <div class="pluses__forms">
+            <div class="form__container">
+              <h3 class="form__title">Стоимость, ₽:</h3>
+              <div class="form__price">
+              <label class="price" for="price__from">
+                <span class="form__text">От</span>
+                <input class="price__before price__before--left" type="text" id="price__from" name="price__from">
+              </label>
+              <label class="price" for="price__before">
+                <span class="form__text">До</span>
+                <input class="price__before" type="text" id="price__before" name="price__before">
+              </label>
+              </div>
+              <label class="range" for="price__range"></label>
+              <input class="styled-slider slider-progress" type="range" name="price" id="price__range" min="0" max="9000" step="1">
+            </div>
+            <div class="buttons">
+            <button class="button button--field" type="submit">Применить</button>
+            <button class="button button--glassy" type="reset">Сбросить</button>
+            </div>
           </div>
-          <div class="form__container">
-            <h3 class="form__title">Стоимость, ₽:</h3>
-            <label class="price" for="price__from">
-              <input class="price__from" type="number" min="1" id="price__from" name="price__from">От
-            </label>
-            <label class="price" for="price__before">
-              <input class="price__before" type="number" max="999999" id="price__before" name="price__before">До
-            </label>
-            <label class="price" for="price__range">Прайс</label>
-            <input class="price__range" type="range" id="price__range" min="0" max="9000" step="1"  name="price">
-          </div>
-          <button class="form__apply form__apply-active" type="submit">Применить</button>
-          <button class="form__throw" type="reset">Сбросить</button>
         </form>
-      </div>
+    </section>
+    <section class="main__content">
       <div class="wrapper">
-        <h2 class="dropdown__title">Найдено гостиниц: 38</h2>
-        <select class="select__control" aria-label="Сортировка">
-          <option value="popular">Сначала дешёвые</option>
-          <option value="cheap">Сначала дорогие</option>
-          <option value="expensive">Сначала популярные</option>
-        </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать в виде бургер</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-        <div class="content">
-          <div class="content__preview">
-            <a href="#" class="img__content">
+        <div class="wrapper__container">
+          <h2 class="title">Найдено гостиниц: 38</h2>
+          <div class="crumbs">
+            <select class="select__control" aria-label="Сортировка">
+              <option class="select__option" value="popular">Сначала дешёвые</option>
+              <option class="select__option" value="cheap">Сначала дорогие</option>
+              <option class="select__option" value="expensive">Сначала популярные</option>
+            </select>
+            <div class="crumbs__container">
+              <a class="crumbs__button crumbs__button--active" href="#">
+                <img class="crumb" src="images/vectors/crumbs-vector.svg" width="16" height="14" alt="Крошки">
+              </a>
+              <a class="crumbs__button" href="#">
+                <img class="crumb" src="images/vectors/burger-vector.svg" width="16" height="14" alt="Бургер">
+              </a>
+              <a class="crumbs__button" href="#">
+                <img class="crumb" src="images/vectors/list-vector.svg" width="16" height="14" alt="Лист">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__preview">
+          <div class="preview__container">
+            <a class="img__content" href="#">
               <img class="img__preview" src="/images/hotel-amara.jpg" width="300" height="212" alt="вид из горы">
-              <h3 class="preview__title">Amara Resort & Spa</h3>
             </a>
-            <div class="preview__grid">
-              <p class="preview__subtitle">Гостиница</p>
-              <p class="preview__subtitle">От 4000 ₽</p>
-              <a class="preview__button" href="#">Подробнее</a>
-              <button class="preview__button preview__button-blue" type="button">в избранное</button>
-              <span class="preview__star">4 звезды</span>
-              <p class="preview__button preview__button-white">Рейтинг: 8,5</p>
+            <h3 class="preview__title">Amara Resort & Spa</h3>
+            <div class="preview__flex">
+              <div class="preview__content">
+                <p class="preview__subtitle">Гостиница</p>
+                <p class="preview__subtitle">От 4000 ₽</p>
+              </div>
+              <div class="preview__content">
+                <a class="preview__button" href="#">Подробнее</a>
+                <button class="preview__button preview__button-blue" type="button">в избранное</button>
+              </div>
+              <div class="preview__content">
+                <div class="preview__stars">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                </div>
+                <p class="preview__button preview__button-white">Рейтинг: 8,5</p>
+              </div>
             </div>
           </div>
-          <div class="content__preview">
-            <a href="#" class="img__content">
+          <div class="preview__container">
+            <a class="img__content" href="#">
               <img class="img__preview" src="/images/hotel-villas.jpg" width="300" height="212" alt="вид горы на рассвете">
-              <h3 class="preview__title">Villas at Poco Diablo</h3>
             </a>
-            <div class="preview__grid">
-              <p class="preview__subtitle">Гостиница</p>
-              <p class="preview__subtitle">От 5000 ₽</p>
-              <a class="preview__button" href="#">Подробнее</a>
-              <button class="preview__button preview__button-blue" type="button">в избранное</button>
-              <span class="preview__star">4 звезды</span>
-              <p class="preview__button preview__button-white">Рейтинг: 9,2</p>
+            <h3 class="preview__title">Villas at Poco Diablo</h3>
+            <div class="preview__flex">
+              <div class="preview__content">
+                <p class="preview__subtitle">Гостиница</p>
+                <p class="preview__subtitle">От 5000 ₽</p>
+              </div>
+              <div class="preview__content">
+                <a class="preview__button" href="#">Подробнее</a>
+                <button class="preview__button preview__button-blue" type="button">в избранное</button>
+              </div>
+              <div class="preview__content">
+                <div class="preview__stars">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                </div>
+                <p class="preview__button preview__button-white">Рейтинг: 9,2</p>
+              </div>
             </div>
           </div>
-          <div class="content__preview">
-            <a href="#" class="img__content">
+          <div class="preview__container">
+            <a class="img__content" href="#">
               <img class="img__preview" src="/images/hotel-desrt-quail.jpg" width="300" height="212" alt="вид горы днем">
-              <h3 class="preview__title">Desert Quail Inn</h3>
             </a>
-            <div class="preview__grid">
-              <p class="preview__subtitle">Гостиница</p>
-              <p class="preview__subtitle">От 2500 ₽</p>
-              <a class="preview__button" href="#">Подробнее</a>
-              <button class="preview__button preview__button-blue" type="button">в избранное</button>
-              <span class="preview__star">3 звезды</span>
-              <p class="preview__button preview__button-white">Рейтинг: 6,9</p>
+            <h3 class="preview__title">Desert Quail Inn</h3>
+            <div class="preview__flex">
+              <div class="preview__content">
+                <p class="preview__subtitle">Гостиница</p>
+                <p class="preview__subtitle">От 2500 ₽</p>
+              </div>
+              <div class="preview__content">
+                <a class="preview__button" href="#">Подробнее</a>
+                <button class="preview__button preview__button-blue" type="button">в избранное</button>
+              </div>
+              <div class="preview__content">
+                <div class="preview__stars">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                </div>
+                <p class="preview__button preview__button-white">Рейтинг: 6,9</p>
+              </div>
             </div>
           </div>
-          <div class="content__preview">
-            <a href="#" class="img__content">
+          <div class="preview__container">
+            <a class="img__content" href="#">
               <img class="img__preview" src="/images/hotel-green-tree.jpg" width="300" height="212" alt="вид на горы ночью">
-              <h3 class="preview__title">GreenTree Inn</h3>
             </a>
-            <div class="preview__grid">
-              <p class="preview__subtitle">Гостиница</p>
-              <p class="preview__subtitle">От 1500 ₽</p>
-              <a class="preview__button" href="#">Подробнее</a>
-              <button class="preview__button preview__button-blue" type="button">в избранное</button>
-              <span class="preview__star">2 звезды</span>
-              <p class="preview__button preview__button-white">Рейтинг: 5,0</p>
+            <h3 class="preview__title">GreenTree Inn</h3>
+            <div class="preview__flex">
+              <div class="preview__content">
+                <p class="preview__subtitle">Гостиница</p>
+                <p class="preview__subtitle">От 1500 ₽</p>
+              </div>
+              <div class="preview__content">
+                <a class="preview__button" href="#">Подробнее</a>
+                <button class="preview__button preview__button-blue" type="button">в избранное</button>
+              </div>
+              <div class="preview__content">
+                <div class="preview__stars">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                  <img class="preview__star" src="images/vectors/vector-star.svg" width="18" height="17" alt="Звезда">
+                </div>
+                <p class="preview__button preview__button-white">Рейтинг: 5,0</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="paginator">
-          <a href="/" class="paginator-item">1</a>
-          <a href="/" class="paginator-item">2</a>
-          <a href="/" class="paginator-item">3</a>
-          <a href="/" class="paginator-item">4</a>
-          <span class="paginator__ellipsis">...</span>
-          <a href="/" class="paginator-item">10</a>
-        </div>
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link  pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item paginator__ellipsis">
+            <a class="pagination__link pagination__link--white" href="#">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">10</a>
+          </li>
+        </ul>
       </div>
-      <div class="contact__card">
-        <h2 class="title__image">Подпишитесь на рассылку</h2>
-        <p class="subtitle__image">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form class="pluses__form" action="https://echo.htmlacademy.ru">
-          <label for="login-field" class="form__login">Подписка</label>
-          <input type="email" placeholder="Ваш e-mail" name="e-mail" id="login-field">
-          <input class="button__field" type="submit" value="Подписаться">
+      <div class="pluses__content pluses__content--white">
+        <h2 class="title">Подпишитесь на рассылку</h2>
+        <p class="subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
+        <form class="pluses__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually__hidden" for="login-field">Подписка</label>
+          <input class="login__field" type="email" placeholder="Ваш e-mail" name="e-mail" id="login-field">
+          <input class="button button--field" type="submit" value="Подписаться">
         </form>
       </div>
     </section>
@@ -189,24 +264,23 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="vk__icon" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
+            <img class="social__icon" src="/images/vectors/vector-vk.svg" alt="Vk">
+          </a></li>
         <li class="social__item">
           <a class="telegram__icon" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм.</span>
-          </a>
+            <img class="social__icon" src="/images/vectors/vector-telegram.svg" alt="Telegram">
+          </a></li>
         <li class="social__item">
           <a class="youtube__icon" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">youtube</span>
-          </a>
-        </li>
+            <img class="social__icon" src="/images/vectors/vector-youtube.svg" alt="You-Tube">
+          </a></li>
       </ul>
-      <a class="contacts__phone" href="tel:+74956660266">+7(495) 666-02-66</a>
+      <a class="contacts__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a class="site__html-academy" href="https://htmlacademy.ru/">
-        <img src="/images/html-academy.svg" width="115" height="34" alt="html-академия">
+        <img class="html__logo" src="/images/html-academy.svg" width="115" height="34" alt="html-академия">
       </a>
     </nav>
-  </footer>
+</footer>
 </div>
 </body>
 </html>
